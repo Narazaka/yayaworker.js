@@ -1,6 +1,6 @@
 {
 	"name": "yayaworker.js",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "WebWorker SHIORI subsystem YAYA",
 	"keywords": ["web", "worker"],
 	"main": "yayaworker.js",
@@ -15,7 +15,8 @@
 		"nativeshiori": "",
 		"WorkerClientServer": "Narazaka/WorkerClientServer",
 		"NativeShioriWorker": "Ikagaka/NativeShioriWorker",
-		"encoding-japanese": "polygonplanet/encoding.js#master"
+		"encoding-japanese": "polygonplanet/encoding.js#master",
+		"bluebird": ""
 	},
 	"author": {
 		"name": "narazaka",
