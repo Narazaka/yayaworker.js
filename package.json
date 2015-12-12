@@ -1,6 +1,6 @@
 {
 	"name": "yayaworker.js",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "WebWorker SHIORI subsystem YAYA",
 	"keywords": ["web", "worker"],
 	"main": "yayaworker.js",
@@ -10,13 +10,13 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"coffee-script": ">= 1.9.0",
-		"yaya.js": "",
-		"nativeshiori": "",
+		"coffee-script": ">= 1.10.0",
+		"yaya.js": ">= 1.0.0",
+		"nativeshiori": "^1.0.1",
 		"WorkerClientServer": "Narazaka/WorkerClientServer",
 		"NativeShioriWorker": "Ikagaka/NativeShioriWorker",
-		"encoding-japanese": "polygonplanet/encoding.js#master",
-		"bluebird": ""
+		"encoding-japanese": "^1.0.24",
+		"bluebird": "^3.0.6"
 	},
 	"author": {
 		"name": "narazaka",

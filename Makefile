@@ -3,11 +3,11 @@ SHIORI_NAME = yaya
 SHIORI_WORKER_CLASS = YAYAWorkerClient
 SHIORI_CLASS = YAYA
 
-SHIORI = node_modules/yaya.js/aya5/yaya.js
+SHIORI = node_modules/yaya.js/yaya.js
 NATIVESHIORI = node_modules/nativeshiori/nativeshiori.js
 ENCODING = node_modules/encoding-japanese/encoding.min.js
 PROMISE = node_modules/bluebird/js/browser/bluebird.min.js
-WORKERSERVER = node_modules/WorkerClientServer/WorkerServer.js
+WORKERSERVER = node_modules/worker-client-server/WorkerServer.js
 NATIVESHIORIWORKERSERVER = node_modules/NativeShioriWorker/NativeShioriWorkerServer.js
 
 all: $(TARGET_JS)
