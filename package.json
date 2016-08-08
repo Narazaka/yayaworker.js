@@ -1,30 +1,38 @@
 {
-	"name": "yayaworker.js",
-	"version": "0.1.0",
-	"description": "WebWorker SHIORI subsystem YAYA",
-	"keywords": ["web", "worker"],
-	"main": "yayaworker.js",
-	"scripts": {
-		"test": "mocha"
-	},
-	"dependencies": {
-	},
-	"devDependencies": {
-		"coffee-script": ">= 1.10.0",
-		"yaya.js": ">= 1.0.0",
-		"nativeshiori": "^1.0.1",
-		"WorkerClientServer": "Narazaka/WorkerClientServer",
-		"NativeShioriWorker": "Ikagaka/NativeShioriWorker",
-		"encoding-japanese": "^1.0.24",
-		"bluebird": "^3.0.6"
-	},
-	"author": {
-		"name": "narazaka",
-		"url": "http://narazaka.net/"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Ikagaka/yayaworker.js.git"
-	}
+  "name": "yayaworker.js",
+  "version": "0.1.0",
+  "description": "WebWorker SHIORI subsystem YAYA",
+  "keywords": [
+    "web",
+    "worker",
+    "ikagaka",
+    "ukagaka"
+  ],
+  "main": "./yayaworker-fork.js",
+  "browser": "./yayaworker-webworker-all.js",
+  "scripts": {
+    "build": "npm run build-fork && npm run build-webworker && npm run build-webworker-all",
+    "build-fork": "makefork YAYA yaya yaya.js > yayaworker-fork.js",
+    "build-webworker": "makewebworker YAYA yaya node_modules/yaya.js/yaya.js > yayaworker-webworker.js",
+    "build-webworker-all": "makewebworker all YAYA yaya node_modules/yaya.js/yaya.js > yayaworker-webworker-all.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "browserfs": "^0.5.12",
+    "native-shiori-worker": "^1.1.3",
+    "nativeshiori": "^2.2.2",
+    "shioriloader": "^1.0.1",
+    "single-file-worker": "^1.0.0",
+    "worker-client-server": "^0.3.1",
+    "yaya.js": "^1.2.0"
+  },
+  "author": {
+    "name": "narazaka",
+    "url": "http://narazaka.net/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ikagaka/yayaworker.js.git"
+  }
 }
