@@ -20,7 +20,7 @@
     "bluebird": "^3.4.1",
     "browserfs": "^0.5.12",
     "native-shiori-worker": "^1.1.3",
-    "nativeshiori": "^2.2.2",
+    "nativeshiori": "^2.3.0",
     "shioriloader": "^1.0.1",
     "single-file-worker": "^1.0.0",
     "worker-client-server": "^0.3.1",
